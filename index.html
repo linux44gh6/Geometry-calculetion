@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMetri Calculetion</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    <main>
+        <div class="flex flex-col lg:flex-row md:flex-row gap-5">
+        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- triangle -->
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title ">Triangle</h2>
+                  <p class="text-center">Aria(A)</p>
+                  <p></p>
+                 <div class="flex items-center">
+                    <input id="base-input" class="w-24 bg-[#F1F1F1] p-2" type="text" placeholder="b">
+                    <span class="mr-1 ml-2 ">cm</span>
+                    <input id="height-input" class="w-24 bg-[#F1F1F1] p-2" type="text"placeholder="h">
+                    <span>cm</span>
+                 </div>
+                 <p>Aria: <span id="result-text"></span> <span>cm<sup>2</sup></span></p>
+
+                  <div class="">
+                    <button onclick="calculetAria()" class="btn btn-primary w-full">Calculet</button>
+                  </div>
+                </div>
+              </div>
+            <!-- rectangle-->
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p></p>
+                 <div class="flex items-center">
+                    <input id="wide-input" class="w-24 bg-[#F1F1F1] p-2" type="text" placeholder="b">
+                    <span class="mr-1 ml-2 ">cm</span>
+                    <input id="length-input" class="w-24 bg-[#F1F1F1] p-2" type="text"placeholder="h">
+                    <span>cm</span>
+                 </div>
+                 <p>Aria: <span id="result-text1"></span> <span>cm<sup>2</sup></span></p>
+
+                  <div class="">
+                    <button onclick="rectangleAria()" class="btn btn-primary w-full">Calculet</button>
+                  </div>
+                </div>
+              </div>
+            <!-- parallelogram -->
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p></p>
+                 <div class="flex items-center">
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text" placeholder="b">
+                    <span class="mr-1 ml-2 ">cm</span>
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text"placeholder="h">
+                    <span>cm</span>
+                 </div>
+                  <div class="">
+                    <button class="btn btn-primary w-full">Calculet</button>
+                  </div>
+                </div>
+              </div>
+            <!-- Rombus -->
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Rombus</h2>
+                  <p></p>
+                 <div class="flex items-center">
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text" placeholder="b">
+                    <span class="mr-1 ml-2 ">cm</span>
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text"placeholder="h">
+                    <span>cm</span>
+                 </div>
+                  <div class="">
+                    <button class="btn btn-primary w-full">Calculet</button>
+                  </div>
+                </div>
+              </div>
+            <!-- pentagon -->
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Pentagon</h2>
+                  <p></p>
+                 <div class="flex items-center">
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text" placeholder="b">
+                    <span class="mr-1 ml-2 ">cm</span>
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text"placeholder="h">
+                    <span>cm</span>
+                 </div>
+                  <div class="">
+                    <button class="btn btn-primary w-full">Calculet</button>
+                  </div>
+                </div>
+              </div>
+            <!-- ellips -->
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Ellips</h2>
+                  <p></p>
+                 <div class="flex items-center">
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text" placeholder="b">
+                    <span class="">cm</span>
+                    <input class="w-24 bg-[#F1F1F1] p-2" type="text"placeholder="h">
+                    <span>cm</span>
+                 </div>
+                  <div class="">
+                    <button class="btn btn-primary w-full">Calculet</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- calculetin part -->
+        <div class="w-96 border border-gray-700 min-h-[200px]">
+            <h1 class="text-center text-3xl font-bold">Area Calculetion</h1>
+        </div>
+        </div>
+    </main>
+<script src="index.js"></script>
+</body>
+
+</html>
